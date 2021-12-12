@@ -18,7 +18,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send(`Server running at ${port} (Deployed via workflow with secret)`)
+    res.send(`Server running at ${port}`)
 })
 
 app.use("/api/v1/auth", authRoutes);
