@@ -4,8 +4,9 @@
   "description": "this is our backend for our project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w src --exec \"babel-node src\"",
-    "build": "babel src --out-dir dist"
+    "dev": "nodemon -w src --exec \"babel-node src\"",
+    "build": "babel src --out-dir dist",
+    "start": "npm install && npm run dev && node dist/index.js"
   },
   "author": "suman choubey",
   "license": "ISC",
