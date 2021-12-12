@@ -9,6 +9,7 @@ import authRoutes from './routes/authRoutes';
 import categoryRoutes from './routes/categoryRoutes';
 import productRoutes from './routes/productRoutes';
 
+
 const port = process.env.PORT || 3000
 
 connect_DB();
