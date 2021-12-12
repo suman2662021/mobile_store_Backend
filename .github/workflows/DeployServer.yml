@@ -16,9 +16,9 @@ jobs:
       - name: test workflow
         run: echo "YAY this workflow is running"
       - name: Add github username
-        run: git config --global user.name 'kartik18G'
+        run: git config --global user.name 'suman2662021'
       - name: Add github email
-        run: git config --global user.email 'gupta.kartik18kg@gmail.com'
+        run: git config --global user.email 'sumanbale1110@gmail.com'
       - name: add heroku remote
         run: git remote add heroku https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/${{secrets.HEROKU_APP_NAME}}.git
       - name: Fetch repo
