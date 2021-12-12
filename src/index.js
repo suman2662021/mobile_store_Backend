@@ -17,6 +17,10 @@ connect_DB();
 app.use(cors())
 app.use(express.json())
 
+app.get('/', (req, res) => {
+    res.send(`Server running at ${port} (Deployed via workflow with secret)`)
+})
+
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
