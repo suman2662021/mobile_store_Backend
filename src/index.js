@@ -12,7 +12,7 @@ import productRoutes from './routes/productRoutes';
 
 const port = process.env.PORT || 3000
 
-connect_DB();
+connect_DB();  //function to coonect database
 
 app.use(cors())
 app.use(express.json())
